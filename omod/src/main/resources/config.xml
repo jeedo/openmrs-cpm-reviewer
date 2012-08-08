@@ -6,7 +6,7 @@
 	<id>${project.parent.artifactId}</id>
 	<name>${project.parent.name}</name>
 	<version>${project.parent.version}</version>
-	<package>${project.parent.groupId}.${project.parent.artifactId}</package>
+	<package>${project.parent.groupId}.cpm</package>
 	<author>filimonovasvetlana</author>
 	<description>
 		${project.parent.description}
@@ -17,13 +17,13 @@
 
 	
 	<!-- Module Activator -->
-	<activator>${project.parent.groupId}.${project.parent.artifactId}.ConceptProposalModuleReviewerActivator</activator>
+	<activator>${project.parent.groupId}.cpm.ConceptProposalModuleReviewerActivator</activator>
 	
 	
 	<!-- Adds link to admin page -->
 	<extension>
 		<point>org.openmrs.admin.list</point>
-		<class>${project.parent.groupId}.${project.parent.artifactId}.extension.html.AdminList</class>
+		<class>${project.parent.groupId}.cpm.extension.html.AdminList</class>
 	</extension>
 	
 	<!-- Maps hibernate file's, if present -->
